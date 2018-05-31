@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180517 16:34:00.919" generator="Robot 3.0.4 (Python 2.7.15 on win32)">
+<suite source="C:\Users\r.moharana\eclipse-workspace\TestAppiumRobotProject" id="s1" name="TestAppiumRobotProject">
+<suite source="C:\Users\r.moharana\eclipse-workspace\TestAppiumRobotProject\TestSuite" id="s1-s1" name="TestSuite">
+<suite source="C:\Users\r.moharana\eclipse-workspace\TestAppiumRobotProject\TestSuite\AppiumTestSuite.robot" id="s1-s1-s1" name="AppiumTestSuite">
+<kw type="setup" name="Open Application Appiumlibrary" library="Utilities">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.</doc>
+<arguments>
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=${deviceName}</arg>
+<arg>automationName=uiautomator2</arg>
+</arguments>
+<kw name="Capture Page Screenshot">
+<msg timestamp="20180517 16:34:03.237" level="FAIL">Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Capture Page Screenshot
+    SeleniumLibrary.Capture Page Screenshot</msg>
+<status status="FAIL" endtime="20180517 16:34:03.237" starttime="20180517 16:34:03.222"></status>
+</kw>
+<msg timestamp="20180517 16:34:03.237" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Capture Page Screenshot
+    SeleniumLibrary.Capture Page Screenshot</msg>
+<msg timestamp="20180517 16:34:03.242" level="FAIL">SessionNotCreatedException: Message: A new session could not be created. (Original error: No app set; either start appium with --app or pass in an 'app' value in desired capabilities, or set androidPackage to launch pre-existing app on device)
+</msg>
+<status status="FAIL" endtime="20180517 16:34:03.243" starttime="20180517 16:34:01.135"></status>
+</kw>
+<status status="FAIL" endtime="20180517 16:34:03.243" starttime="20180517 16:34:01.120"></status>
+</kw>
+<test id="s1-s1-s1-t1" name="Validate Emulator">
+<status status="FAIL" endtime="20180517 16:34:03.244" critical="yes" starttime="20180517 16:34:03.243">Parent suite setup failed:
+SessionNotCreatedException: Message: A new session could not be created. (Original error: No app set; either start appium with --app or pass in an 'app' value in desired capabilities, or set androidPackage to launch pre-existing app on device)
+</status>
+</test>
+<status status="FAIL" endtime="20180517 16:34:03.245" starttime="20180517 16:34:00.972">Suite setup failed:
+SessionNotCreatedException: Message: A new session could not be created. (Original error: No app set; either start appium with --app or pass in an 'app' value in desired capabilities, or set androidPackage to launch pre-existing app on device)
+</status>
+</suite>
+<status status="FAIL" endtime="20180517 16:34:03.245" starttime="20180517 16:34:00.969"></status>
+</suite>
+<status status="FAIL" endtime="20180517 16:34:03.245" starttime="20180517 16:34:00.935"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="TestAppiumRobotProject" pass="0">TestAppiumRobotProject</stat>
+<stat fail="1" id="s1-s1" name="TestSuite" pass="0">TestAppiumRobotProject.TestSuite</stat>
+<stat fail="1" id="s1-s1-s1" name="AppiumTestSuite" pass="0">TestAppiumRobotProject.TestSuite.AppiumTestSuite</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20180517 16:34:03.237" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Capture Page Screenshot
+    SeleniumLibrary.Capture Page Screenshot</msg>
+</errors>
+</robot>
