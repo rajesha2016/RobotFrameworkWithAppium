@@ -1,44 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20180517 16:34:00.919" generator="Robot 3.0.4 (Python 2.7.15 on win32)">
-<suite source="C:\Users\r.moharana\eclipse-workspace\TestAppiumRobotProject" id="s1" name="TestAppiumRobotProject">
-<suite source="C:\Users\r.moharana\eclipse-workspace\TestAppiumRobotProject\TestSuite" id="s1-s1" name="TestSuite">
-<suite source="C:\Users\r.moharana\eclipse-workspace\TestAppiumRobotProject\TestSuite\AppiumTestSuite.robot" id="s1-s1-s1" name="AppiumTestSuite">
-<kw type="setup" name="Open Application Appiumlibrary" library="Utilities">
+<robot generated="20180613 17:47:15.635" generator="Robot 3.0.4 (Python 2.7.15 on win32)">
+<suite source="C:\Users\r.moharana\git\RobotFrameworkWithAppium\TestAppiumRobotProject" id="s1" name="TestAppiumRobotProject">
+<suite source="C:\Users\r.moharana\git\RobotFrameworkWithAppium\TestAppiumRobotProject\TestSuite" id="s1-s1" name="TestSuite">
+<suite source="C:\Users\r.moharana\git\RobotFrameworkWithAppium\TestAppiumRobotProject\TestSuite\AppiumTestSuite.robot" id="s1-s1-s1" name="AppiumTestSuite">
+<test id="s1-s1-s1-t1" name="Verify first native app launch in robotframework">
+<kw name="Open Application Appiumlibrary" library="Utilities">
 <kw name="Open Application" library="AppiumLibrary">
 <doc>Opens a new application to given Appium server.</doc>
 <arguments>
 <arg>http://localhost:4723/wd/hub</arg>
 <arg>platformName=Android</arg>
-<arg>deviceName=${deviceName}</arg>
-<arg>automationName=uiautomator2</arg>
+<arg>deviceName=${deviceId}</arg>
+<arg>platformVersion=23</arg>
+<arg>app=D:/RobotFramework/demo.apk</arg>
 </arguments>
+<msg timestamp="20180613 17:47:17.845" level="INFO">Could not connect to port 4723 on host localhost</msg>
+<msg timestamp="20180613 17:47:17.847" level="INFO">Could not get IP address for host: localhost</msg>
 <kw name="Capture Page Screenshot">
-<msg timestamp="20180517 16:34:03.237" level="FAIL">Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+<msg timestamp="20180613 17:47:19.874" level="FAIL">Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
     AppiumLibrary.Capture Page Screenshot
     SeleniumLibrary.Capture Page Screenshot</msg>
-<status status="FAIL" endtime="20180517 16:34:03.237" starttime="20180517 16:34:03.222"></status>
+<status status="FAIL" endtime="20180613 17:47:19.875" starttime="20180613 17:47:19.872"></status>
 </kw>
-<msg timestamp="20180517 16:34:03.237" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+<msg timestamp="20180613 17:47:19.877" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
     AppiumLibrary.Capture Page Screenshot
     SeleniumLibrary.Capture Page Screenshot</msg>
-<msg timestamp="20180517 16:34:03.242" level="FAIL">SessionNotCreatedException: Message: A new session could not be created. (Original error: No app set; either start appium with --app or pass in an 'app' value in desired capabilities, or set androidPackage to launch pre-existing app on device)
-</msg>
-<status status="FAIL" endtime="20180517 16:34:03.243" starttime="20180517 16:34:01.135"></status>
+<msg timestamp="20180613 17:47:19.889" level="FAIL">URLError: &lt;urlopen error [Errno 10061] No connection could be made because the target machine actively refused it&gt;</msg>
+<status status="FAIL" endtime="20180613 17:47:19.890" starttime="20180613 17:47:15.841"></status>
 </kw>
-<status status="FAIL" endtime="20180517 16:34:03.243" starttime="20180517 16:34:01.120"></status>
+<status status="FAIL" endtime="20180613 17:47:19.892" starttime="20180613 17:47:15.840"></status>
 </kw>
-<test id="s1-s1-s1-t1" name="Validate Emulator">
-<status status="FAIL" endtime="20180517 16:34:03.244" critical="yes" starttime="20180517 16:34:03.243">Parent suite setup failed:
-SessionNotCreatedException: Message: A new session could not be created. (Original error: No app set; either start appium with --app or pass in an 'app' value in desired capabilities, or set androidPackage to launch pre-existing app on device)
-</status>
+<status status="FAIL" endtime="20180613 17:47:19.895" critical="yes" starttime="20180613 17:47:15.839">URLError: &lt;urlopen error [Errno 10061] No connection could be made because the target machine actively refused it&gt;</status>
 </test>
-<status status="FAIL" endtime="20180517 16:34:03.245" starttime="20180517 16:34:00.972">Suite setup failed:
-SessionNotCreatedException: Message: A new session could not be created. (Original error: No app set; either start appium with --app or pass in an 'app' value in desired capabilities, or set androidPackage to launch pre-existing app on device)
-</status>
+<status status="FAIL" endtime="20180613 17:47:19.898" starttime="20180613 17:47:15.679"></status>
 </suite>
-<status status="FAIL" endtime="20180517 16:34:03.245" starttime="20180517 16:34:00.969"></status>
+<status status="FAIL" endtime="20180613 17:47:19.908" starttime="20180613 17:47:15.677"></status>
 </suite>
-<status status="FAIL" endtime="20180517 16:34:03.245" starttime="20180517 16:34:00.935"></status>
+<status status="FAIL" endtime="20180613 17:47:19.911" starttime="20180613 17:47:15.658"></status>
 </suite>
 <statistics>
 <total>
@@ -54,7 +52,7 @@ SessionNotCreatedException: Message: A new session could not be created. (Origin
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20180517 16:34:03.237" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+<msg timestamp="20180613 17:47:19.877" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
     AppiumLibrary.Capture Page Screenshot
     SeleniumLibrary.Capture Page Screenshot</msg>
 </errors>

@@ -3,11 +3,10 @@
 Library     AppiumLibrary
 Resource    ../ApplicationLibrary/Utilities.robot
 
-Suite Setup     Open Application Appiumlibrary
 
 
 *** Test Cases ***
 
-Validate Emulator
-    Given browser open in chrome
+Verify first native app launch in robotframework
+    Open Application Appiumlibrary
     
